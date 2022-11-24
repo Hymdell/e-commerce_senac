@@ -14,6 +14,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="forma.css">
+    <link rel="stylesheet" href="carrosel.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 
 <body style="display: flex; flex-direction: column; justify-content: space-between; height: 100vh;">
