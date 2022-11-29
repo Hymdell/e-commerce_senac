@@ -77,7 +77,58 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Escolha como quer <em>Entrar</em> ou se <span>Registrar</span> no site</h2>
+            <h2>Escolha como quer <em>Logar</em> no site</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center ">
+        <div class="col-lg-10 col-sm-6">
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="login_empresa.php">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>Empresa</h4>
+                <p>Entrar como empresa para oferecer seus serviços.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/building-up.svg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="login_tecnico.php">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Técnico</h4>
+                <p>Entrar como técnico para oferecer seus serviços.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/wrench-up.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="login_cliente.php">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="hidden-content">
+                <h4>Cliente</h4>
+                <p>Entrar como Cliente para procurar serviços de Empresas/Técnicos.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/person-up.svg" alt="">
+              </div>
+            </div>
+            </a>
+        </div>
+      </div>
+      <br><br><br><br>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2>Não Possui uma conta?<br>Escolha como quer se <span>Registrar</span> no site</h2>
           </div>
         </div>
       </div>
@@ -92,7 +143,7 @@
                 <p>Se registre como empresa para oferecer seus serviços.</p>
               </div>
               <div class="showed-content">
-                <img src="assets/images/buildings.svg" alt="">
+                <img src="assets/images/building-add.svg" alt="">
               </div>
             </div>
           </a>
@@ -105,7 +156,7 @@
                 <p>Se registrar como técnico para oferecer seus serviços.</p>
               </div>
               <div class="showed-content">
-                <img src="assets/images/tecnicos.png" alt="">
+                <img src="assets/images/wrench-add.png" alt="">
               </div>
             </div>
           </a>
@@ -118,7 +169,7 @@
                 <p>Se registrar para procurar serviços de Empresas/Técnicos.</p>
               </div>
               <div class="showed-content">
-                <img src="assets/images/person-circle.svg" alt="">
+                <img src="assets/images/person-add.svg" alt="">
               </div>
             </div>
             </a>

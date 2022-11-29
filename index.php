@@ -55,12 +55,12 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Empresas</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Técnicos</a></li>
-              <li class="scroll-to-section"><a href="#about">Sobre Nós</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha_login_registro.php">Login/Cadastro</a></div></li>
+              <li class="scroll-to-section"><a href="#" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#">Empresas</a></li>
+              <li class="scroll-to-section"><a href="#">Técnicos</a></li>
+              <li class="scroll-to-section"><a href="#">Sobre Nós</a></li>
+              <li class="scroll-to-section"><a href="#">Contato</a></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -184,7 +184,7 @@
                 <p>Empresa para Empresas faça seu contrato.</p>
               </div>
               <div class="showed-content">
-                <img src="assets/images/buildings.svg" alt="">
+                <img src="assets/images/building.svg" alt="">
               </div>
             </div>
           </a>
@@ -197,7 +197,7 @@
                 <p>Empresa atendimentos para todos.</p>
               </div>
               <div class="showed-content">
-                <img src="assets/images/buildings.svg" alt="">
+                <img src="assets/images/building.svg" alt="">
               </div>
             </div>
           </a>
@@ -210,7 +210,7 @@
                 <p>Atendimentos remotos e a domicílio.</p>
               </div>
               <div class="showed-content">
-                <img src="assets/images/tecnicos.png" alt="">
+                <img src="assets/images/wrench.png" alt="">
               </div>
             </div>
           </a>
@@ -223,7 +223,7 @@
                 <p>Atendimentos apenas no meu local.</p>
               </div>
               <div class="showed-content">
-                <img src="assets/images/tecnicos.png" alt="">
+                <img src="assets/images/wrench.png" alt="">
               </div>
             </div>
           </a>

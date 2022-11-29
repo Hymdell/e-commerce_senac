@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <div class="title">
-        <a href="escolha_login_registro.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Registro EMPRESA</div>
+        <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Registro EMPRESA</div>
     <div class="content">
       <form action="#">
         <div class="user-details">
@@ -20,8 +20,8 @@
             <input type="text" placeholder="Nome da empresa" required>
           </div>
           <div class="input-box">
-            <span class="details">Sobrenome</span>
-            <input type="text" placeholder="Seu Sobrenome" required>
+            <span class="details">CPNJ</span>
+            <input type="text" placeholder="CPNJ da Empresa" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -40,7 +40,11 @@
             <input type="text" placeholder="Sua Senha novamente" required>
           </div>
           <div class="input-box">
-            <span class="details">Endereço</span>
+            <span class="details">Cidade</span>
+            <input type="text" placeholder="Cidade da empresa" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Rua</span>
             <input type="text" placeholder="Rua da empresa" required>
           </div>
           <div class="input-box">

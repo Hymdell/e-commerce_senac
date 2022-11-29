@@ -11,17 +11,17 @@
 <body>
   <div class="container">
     <div class="title">
-    <a href="escolha_login_registro.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a>Registro CLIENTE</div>
+    <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a>Registro CLIENTE</div>
     <div class="content">
       <form action="#">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Nome</span>
-            <input type="text" placeholder="Nome da empresa" required>
+            <span class="details">Nome Completo</span>
+            <input type="text" placeholder="Seu nome completo" required>
           </div>
           <div class="input-box">
-            <span class="details">Sobrenome</span>
-            <input type="text" placeholder="Seu Sobrenome" required>
+            <span class="details">CPF</span>
+            <input type="text" placeholder="Seu CPF" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -38,18 +38,6 @@
           <div class="input-box">
             <span class="details">Confirme a senha</span>
             <input type="text" placeholder="Sua Senha novamente" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Endereço</span>
-            <input type="text" placeholder="Rua da empresa" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Número</span>
-            <input type="text" placeholder="Número da empresa" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Bairro</span>
-            <input type="text" placeholder="Bairro da empresa" required>
           </div>
         </div>
         <div class="button">
