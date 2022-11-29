@@ -20,14 +20,14 @@
     <section class="container forms">
         <div class="form login">
             <div class="form-content">
-                <header><a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Login Empresa</header>
-                <form action="#" method="POST">
+                <header>Login</header>
+                <form action="#">
                     <div class="field input-field">
-                        <input type="text" placeholder="Usuário" class="input" name="usuario" required>
+                        <input type="email" placeholder="E-mail" class="input" name="name">
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Senha" class="password" name="senha" required>
+                        <input type="password" placeholder="Senha" class="password" name="passwd">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
@@ -35,10 +35,44 @@
                         <button>Entrar</button>
                     </div>
                 </form>
+                <div class="form-link">
+                    <span>Não tem uma conta ainda? <a href="#" class="link signup-link">Cadastre-se</a></span>
+                </div>
             </div>
             <div class="line"></div>
         </div>
 
+        <!-- Signup Form -->
+
+        <div class="form signup">
+            <div class="form-content">
+                <header>Cadastrar</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" name="email_sign">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password" name="passwd_sign">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password" name="passwd_confirm">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Cadastrar</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Já tem uma conta? <a href="#" class="link login-link">Entrar</a></span>
+                </div>
+            </div>
+
+        </div>
     </section>
     <script>
         const forms = document.querySelector(".forms"),

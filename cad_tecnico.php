@@ -55,6 +55,10 @@
             <span class="details">Bairro</span>
             <input type="text" placeholder="Bairro do local" required>
           </div>
+          <div class="input-box">
+            <span class="details">Complemento</span>
+            <input type="text" placeholder="Complemento do endereço" required>
+          </div>
         </div>
         <div class="button">
           <input type="submit" value="Registrar">

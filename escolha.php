@@ -235,7 +235,7 @@
           <p>© Copyright 2022 Hymdell. Todos Direitos Reservados. 
           
           <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a> | 
-          <a rel="nofollow" href="404.html">404</a></p>
+          <a rel="nofollow" href="404.php">404</a></p>
         </div>
       </div>
     </div>

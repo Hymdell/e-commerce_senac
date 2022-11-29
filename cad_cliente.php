@@ -39,6 +39,26 @@
             <span class="details">Confirme a senha</span>
             <input type="text" placeholder="Sua Senha novamente" required>
           </div>
+          <div class="input-box">
+            <span class="details">Cidade</span>
+            <input type="text" placeholder="Sua Cidade" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Rua</span>
+            <input type="text" placeholder="Sua Rua" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Número</span>
+            <input type="text" placeholder="Número da sua casa/prédio" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Bairro</span>
+            <input type="text" placeholder="Seu Bairro" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Complemento</span>
+            <input type="text" placeholder="Complemento do endereço" required>
+          </div>
         </div>
         <div class="button">
           <input type="submit" value="Registrar">

@@ -55,11 +55,12 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#">Empresas</a></li>
               <li class="scroll-to-section"><a href="#">Técnicos</a></li>
-              <li class="scroll-to-section"><a href="#">Sobre Nós</a></li>
-              <li class="scroll-to-section"><a href="#">Contato</a></li>
+              <li class="scroll-to-section"><a href="#highlights">Destaques</a></li>
+              <li class="scroll-to-section"><a href="#about">Sobre Nós</a></li>
+              <li class="scroll-to-section"><a href="#contact">Contato</a></li>
               <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
             </ul>        
             <a class='menu-trigger'>
@@ -166,12 +167,12 @@
     </div>
   </div>
 
-  <div id="portfolio" class="our-portfolio section">
+  <div id="highlights" class="our-portfolio section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Veja aqui <em>Empresas</em> e <span>Técnicos</span> Em destaque</h2>
+            <h2>Veja aqui <a href="#"><em>Empresas</em></a> e <a href="#"><span>Técnicos</span></a> Em destaque</h2>
           </div>
         </div>
       </div>
