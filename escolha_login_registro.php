@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>PLACEHOLDER</title>
+    <title>PLACEHOLDER Escolha</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,7 +85,7 @@
         <div class="col-lg-10 col-sm-6">
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#">
+          <a href="cad_empresa.php">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="hidden-content">
                 <h4>Empresa</h4>
@@ -98,7 +98,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#">
+          <a href="cad_tecnico.php">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
               <div class="hidden-content">
                 <h4>Técnico</h4>
@@ -111,7 +111,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#">
+          <a href="cad_cliente.php">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="hidden-content">
                 <h4>Cliente</h4>
@@ -122,8 +122,6 @@
               </div>
             </div>
             </a>
-        </div>
-        <div class="col-lg-1 col-sm-6">
         </div>
       </div>
     </div>
@@ -137,7 +135,7 @@
             <h2>Contate-nos!</h2>
             <p>Caso necessite de auxilio para registro da sua empresa, registro como técnico, registro como cliente, algo relacionado ao site ou alguma sugestão fique a vontade de enviar um email.</p>
             <div class="phone-info">
-              <h4>Para assuntos mais urgentes: <span><i class="fa fa-phone"></i> <a href="#">+55 (DDD) 0 4002-8922</a></span></h4>
+              <h4>Para assuntos mais urgentes: <span><i class="fa fa-phone"></i> <a>+55 (DDD) 0 4002-8922</a></span></h4>
             </div>
           </div>
         </div>
