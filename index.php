@@ -49,7 +49,7 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
+            <a href="index.php" class="logo">
               <h4>Place<span>Holder</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
@@ -60,7 +60,7 @@
               <li class="scroll-to-section"><a href="#portfolio">Técnicos</a></li>
               <li class="scroll-to-section"><a href="#about">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="/login/login.html">Login/Cadastro</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha_login_registro.php">Login/Cadastro</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -288,7 +288,8 @@
         <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
           <p>© Copyright 2022 Hymdell. Todos Direitos Reservados. 
           
-          <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+          <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a> | 
+          <a rel="nofollow" href="404.php">404</a></p>
         </div>
       </div>
     </div>
