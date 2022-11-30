@@ -29,15 +29,15 @@
           </div>
           <div class="input-box">
             <span class="details">Telefone</span>
-            <input type="text" placeholder="Número para contato" required>
+            <input type="tel" placeholder="Número para contato" required>
           </div>
           <div class="input-box">
             <span class="details">Senha</span>
-            <input type="text" placeholder="Sua Senha" required>
+            <input type="password" placeholder="Sua Senha" required>
           </div>
           <div class="input-box">
             <span class="details">Confirme a senha</span>
-            <input type="text" placeholder="Sua Senha novamente" required>
+            <input type="password" placeholder="Sua Senha novamente" required>
           </div>
           <div class="input-box">
             <span class="details">Estado</span>
