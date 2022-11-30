@@ -25,7 +25,7 @@
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Email para contato" required>
+            <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Email para contato" required>
           </div>
           <div class="input-box">
             <span class="details">Telefone</span>
@@ -38,6 +38,10 @@
           <div class="input-box">
             <span class="details">Confirme a senha</span>
             <input type="text" placeholder="Sua Senha novamente" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Estado</span>
+            <input type="text" placeholder="Seu Estado, Ex: SP" required>
           </div>
           <div class="input-box">
             <span class="details">Cidade</span>
