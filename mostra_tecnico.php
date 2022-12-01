@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>PLACEHOLDER</title>
+    <title>TECHCARE</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,8 +49,8 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index_logado.php" class="logo">
-              <h4>Place<span>Holder</span></h4>
+            <a href="index.php" class="logo">
+              <h4>Tech<span>Care</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -61,7 +61,7 @@
               <li class="scroll-to-section"><a href="#highlights">Destaques</a></li>
               <li class="scroll-to-section"><a href="#about">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#">Perfil</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -81,145 +81,20 @@
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Bem vindo/a ao PLACEHOLDER</h6>
-                <h2>Seu local para <em>Contratar</em> e <span>Prestar</span> Serviços de manutenção</h2>
-                <p>Procure aqui empresas e técnicos na sua cidade para que possa solucionar seu problema atual ou fazer contratos.</p>
+                <h2>Técnico X</h2>
+                <h5>Estado: RS | Cidade: Tramandaí</h5>
+                <h5>Endereço: Avenida nida, 403, Centro, prédio azul.</h5>
+                <h5>Email: tecnico@email.com<br>Telefone: (+55) 51 0 4002-8922</h5>
+                <br>
+                <p class="texto">RESUMO SOBRE o TÉCNICO</p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/mascote.png" alt="team meeting">
+                <img src="assets/images/" alt="IMAGEM AQUI">
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="about" class="about-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <img src="assets/images/servicos.png" alt="person graphic">
-          </div>
-        </div>
-        <div class="col-lg-8 align-self-center">
-          <div class="services">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <div class="icon">
-                    <img src="assets/images/buildings.svg" width="100" height="100" alt="reporting">
-                  </div>
-                  <div class="right-text">
-                    <h4>Empresas</h4>
-                    <p>Ofereça seus serviços de forma rápida e eficiente.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-                  <div class="icon">
-                    <img src="assets/images/person-fill-gear.svg" width="100" height="100" alt="">
-                  </div>
-                  <div class="right-text">
-                    <h4>Técnicos</h4>
-                    <p>Ofereça serviços de acordo com seu método de trabalho.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
-                  <div class="icon">
-                    <img src="assets/images/person-circle.svg" width="100" height="100" alt="">
-                  </div>
-                  <div class="right-text">
-                    <h4>Clientes</h4>
-                    <p>Encontre empresas ou técnicos de acordo com seu problema.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
-                  <div class="icon">
-                    <img src="assets/images/clipboard-data.svg"  width="100" height="100" alt="">
-                  </div>
-                  <div class="right-text">
-                    <h4>Praticidade</h4>
-                    <p>Consulte localizações, serviços oferecidos e viabilidade de contratos.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="highlights" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Veja aqui <a href="#"><em>Empresas</em></a> e <a href="#"><span>Técnicos</span></a> Em destaque</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>Empresa 1</h4>
-                <p>Empresa para Empresas faça seu contrato.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Empresa 2</h4>
-                <p>Empresa atendimentos para todos.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Técnico 1</h4>
-                <p>Atendimentos remotos e a domicílio.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-              <div class="hidden-content">
-                <h4>Técnico 2</h4>
-                <p>Atendimentos apenas no meu local.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </div>

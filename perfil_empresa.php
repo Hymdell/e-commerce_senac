@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>PLACEHOLDER</title>
+    <title>TECHCARE Perfil</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.php" class="logo">
-              <h4>Place<span>Holder</span></h4>
+              <h4>Tech<span>Care</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -155,6 +155,12 @@
                 <fieldset>
                   <label for="senha">Complemento: </label>
                   <input type="password" name="senha" id="senha" placeholder="Sua senha" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="resumo">Resumo:</label>
+                  <textarea name="resumo" type="text" class="form-control" id="resumo" placeholder="Um resumo sobre a empresa e seus serviços" required=""></textarea>  
                 </fieldset>
               </div>
               <div class="col-lg-12">

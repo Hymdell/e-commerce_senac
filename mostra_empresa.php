@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>TECHARE Escolha</title>
+    <title>TECHCARE</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,11 +56,12 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Empresas</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Técnicos</a></li>
+              <li class="scroll-to-section"><a href="#">Empresas</a></li>
+              <li class="scroll-to-section"><a href="#">Técnicos</a></li>
+              <li class="scroll-to-section"><a href="#highlights">Destaques</a></li>
               <li class="scroll-to-section"><a href="#about">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha_login_registro.php">Login/Cadastro</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -71,108 +72,30 @@
       </div>
     </div>
   </header>
+  <!-- ***** Header Area End ***** -->
 
-  <div id="portfolio" class="our-portfolio section">
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Escolha como quer <em>Logar</em> no site</h2>
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h2>Empresa X</h2>
+                <h5>Estado: RS | Cidade: Tramandaí</h5>
+                <h5>Endereço: Rua rua, 404, Centro, ao lado do posto BR.</h5>
+                <h5>Email: empresa@email.com<br>Telefone: (+55) 51 0 4002-8922</h5>
+                <br>
+                <p class="texto">RESUMO SOBRE A EMPRESA</p>
+                <p class="texto">CPNJ: XX. XXX. XXX/0001-XX</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/" alt="IMAGEM AQUI">
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row text-center ">
-        <div class="col-lg-10 col-sm-6">
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="login_empresa.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>Empresa</h4>
-                <p>Entrar como empresa para oferecer seus serviços.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building-up.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="login_tecnico.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Técnico</h4>
-                <p>Entrar como técnico para oferecer seus serviços.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench-up.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="login_cliente.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Cliente</h4>
-                <p>Entrar como Cliente para procurar serviços de Empresas/Técnicos.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/person-up.svg" alt="">
-              </div>
-            </div>
-            </a>
-        </div>
-      </div>
-      <br><br><br><br>
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Não Possui uma conta?<br>Escolha como quer se <span>Registrar</span> no site</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center ">
-        <div class="col-lg-10 col-sm-6">
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="cad_empresa.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>Empresa</h4>
-                <p>Se registre como empresa para oferecer seus serviços.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building-add.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="cad_tecnico.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Técnico</h4>
-                <p>Se registrar como técnico para oferecer seus serviços.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench-add.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="cad_cliente.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Cliente</h4>
-                <p>Se registrar para procurar serviços de Empresas/Técnicos.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/person-add.svg" alt="">
-              </div>
-            </div>
-            </a>
         </div>
       </div>
     </div>
@@ -186,7 +109,7 @@
             <h2>Contate-nos!</h2>
             <p>Caso necessite de auxilio para registro da sua empresa, registro como técnico, registro como cliente, algo relacionado ao site ou alguma sugestão fique a vontade de enviar um email.</p>
             <div class="phone-info">
-              <h4>Para assuntos mais urgentes: <span><i class="fa fa-phone"></i> <a>+55 (DDD) 0 4002-8922</a></span></h4>
+              <h4>Para assuntos mais urgentes: <span><i class="fa fa-phone"></i> <a href="#">+55 (DDD) 0 4002-8922</a></span></h4>
             </div>
           </div>
         </div>
