@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>PLACEHOLDER</title>
+    <title>TECHCARE</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.php" class="logo">
-              <h4>Place<span>Holder</span></h4>
+              <h4>Tech<span>Care</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -81,7 +81,7 @@
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Bem vindo/a ao PLACEHOLDER</h6>
+                <h6>Bem vindo/a a TECHCARE</h6>
                 <h2>Seu local para <em>Contratar</em> e <span>Prestar</span> Serviços de manutenção</h2>
                 <p>Procure aqui empresas e técnicos na sua cidade para que possa solucionar seu problema atual ou fazer contratos.</p>
               </div>
