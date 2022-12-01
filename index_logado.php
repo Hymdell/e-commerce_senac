@@ -49,7 +49,7 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.php" class="logo">
+            <a href="index_logado.php" class="logo">
               <h4>Place<span>Holder</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
@@ -61,7 +61,7 @@
               <li class="scroll-to-section"><a href="#highlights">Destaques</a></li>
               <li class="scroll-to-section"><a href="#about">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="#">Perfil</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>

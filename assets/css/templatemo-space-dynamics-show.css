@@ -1097,18 +1097,18 @@ Portfolio
 }
 
 .our-portfolio .item:hover .hidden-content {
-  top: -100px;
+  top: 110px;
   opacity: 1;
   visibility: visible;
 }
 
 .our-portfolio .item:hover .showed-content {
-  top: 100px;
+  top: -110px;
 }
 
 .our-portfolio .hidden-content {
-  background: rgb(255,77,30);
-  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+  background: rgba(3,164,237,1);
+  background: linear-gradient(105deg, rgba(3,164,237,1) 0%, rgba(3,106,237,1) 100%);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
@@ -1124,13 +1124,13 @@ Portfolio
   width: 20px;
   height: 20px;
   position: absolute;
-  background: rgb(255,77,30);
+  background: rgb(3,164,237);
   content: '';
   left: 50%;
-  bottom: -8px;
+  top: -8px;
   margin-left: -5px;
   transform: rotate(45deg);
-  background: linear-gradient(105deg, rgba(255,52,69,1) 0%, rgba(255,51,78,1) 100%);
+  background: linear-gradient(105deg, rgba(3,164,237,1) 0%, rgba(3,106,237,1) 100%);
   z-index: -1;
 }
 
