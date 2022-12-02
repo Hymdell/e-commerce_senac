@@ -13,55 +13,56 @@
     <div class="title">
     <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a>Registro CLIENTE</div>
     <div class="content">
-      <form action="#">
+      <form action="cad_verifica.php" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Nome Completo</span>
-            <input type="text" placeholder="Seu nome completo" required>
+            <input type="text" name="nome" placeholder="Seu nome completo" required>
           </div>
           <div class="input-box">
             <span class="details">CPF</span>
-            <input type="text" placeholder="Seu CPF" required>
+            <input type="text" name="cpfcnpj" placeholder="Seu CPF" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Email para contato" required>
+            <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Email para contato" required>
           </div>
           <div class="input-box">
             <span class="details">Telefone</span>
-            <input type="tel" placeholder="Número para contato" required>
+            <input type="tel" name="telefone" placeholder="Número para contato" required>
           </div>
           <div class="input-box">
             <span class="details">Senha</span>
-            <input type="password" placeholder="Sua Senha" required>
+            <input type="password" name="senha" placeholder="Sua Senha" required>
           </div>
           <div class="input-box">
             <span class="details">Confirme a senha</span>
-            <input type="password" placeholder="Sua Senha novamente" required>
+            <input type="password" name="senha2" placeholder="Sua Senha novamente" required>
           </div>
           <div class="input-box">
             <span class="details">Estado</span>
-            <input type="text" placeholder="Seu Estado, EX: SP" required>
+            <input type="text" name="estado" placeholder="Seu Estado, EX: SP" required>
           </div>
           <div class="input-box">
             <span class="details">Cidade</span>
-            <input type="text" placeholder="Sua Cidade" required>
+            <input type="text" name="cidade" placeholder="Sua Cidade" required>
           </div>
           <div class="input-box">
             <span class="details">Rua</span>
-            <input type="text" placeholder="Sua Rua" required>
+            <input type="text" name="rua" placeholder="Sua Rua" required>
           </div>
           <div class="input-box">
             <span class="details">Número</span>
-            <input type="text" placeholder="Número da sua casa/prédio" required>
+            <input type="text" name="numero" placeholder="Número da sua casa/prédio" required>
           </div>
           <div class="input-box">
             <span class="details">Bairro</span>
-            <input type="text" placeholder="Seu Bairro" required>
+            <input type="text" name="bairro" placeholder="Seu Bairro" required>
           </div>
           <div class="input-box">
             <span class="details">Complemento</span>
-            <input type="text" placeholder="Complemento do endereço" required>
+            <input type="text" name="complemento" placeholder="Complemento do endereço" required>
+            <input type="hidden" name="tabela" value="clientes">
           </div>
         </div>
         <div class="button">

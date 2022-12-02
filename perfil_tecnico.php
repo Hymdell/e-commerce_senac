@@ -49,7 +49,7 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.php" class="logo">
+            <a href="index_logado.php" class="logo">
               <h4>Tech<span>Care</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
@@ -61,7 +61,7 @@
               <li class="scroll-to-section"><a href="#highlights">Destaques</a></li>
               <li class="scroll-to-section"><a href="#about">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -78,7 +78,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-20 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+          <form id="contact" action="perfil_att_del.php" method="post">
             <div class="row">
             <div class="col-lg-12">
                 <fieldset>
@@ -87,14 +87,14 @@
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                    <label for="name">Nome: </label>
-                  <input type="name" name="name" id="name" placeholder="Nome" autocomplete="on" required>
+                    <label for="nome">Nome: </label>
+                  <input type="name" name="nome" id="name" placeholder="Nome" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="cpf">CPF: </label>
-                  <input type="text" name="cpf" id="cpf" placeholder="CPF" autocomplete="on" required>
+                  <input type="text" name="cpfcnpj" id="cpf" placeholder="CPF" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
@@ -105,8 +105,8 @@
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <label for="tel">Telefone: </label>
-                  <input type="tel" name="tel" id="tel" placeholder="Seu Telefone" required="">
+                  <label for="telefone">Telefone: </label>
+                  <input type="tel" name="telefone" id="tel" placeholder="Seu Telefone" required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
@@ -143,12 +143,6 @@
                 <fieldset>
                   <label for="complemento">Complemento: </label>
                   <input type="text" name="complemento" id="complemento" placeholder="Complemento do endereço" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <label for="usuario">Usuário: </label>
-                  <input type="text" name="usuario" id="usuario" placeholder="Seu Usuário" required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">

@@ -163,7 +163,7 @@ class Conexao{
                 $dados[$x][10] = $aux_query['Resumo'];
                 $x++;
             }
-        }else{
+        }else if($tabela == "empresas"){
             while($aux_query = $result->fetch_assoc()){
                 $dados[$x][0] = $aux_query['Nome'];
                 $dados[$x][1] = $aux_query['CNPJ'];
@@ -176,6 +176,20 @@ class Conexao{
                 $dados[$x][8] = $aux_query['Bairro'];
                 $dados[$x][9] = $aux_query['Complemento'];
                 $dados[$x][10] = $aux_query['Resumo'];
+                $x++;
+            }
+        }else if($tabela == "clientes"){
+            while($aux_query = $result->fetch_assoc()){
+                $dados[$x][0] = $aux_query['Nome'];
+                $dados[$x][1] = $aux_query['CPFuser'];
+                $dados[$x][2] = $aux_query['Email'];
+                $dados[$x][3] = $aux_query['Telefone'];
+                $dados[$x][4] = $aux_query['Estado'];
+                $dados[$x][5] = $aux_query['Cidade'];
+                $dados[$x][6] = $aux_query['Rua'];
+                $dados[$x][7] = $aux_query['Numero'];
+                $dados[$x][8] = $aux_query['Bairro'];
+                $dados[$x][9] = $aux_query['Complemento'];
                 $x++;
             }
         }
