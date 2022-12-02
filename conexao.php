@@ -3,7 +3,7 @@ class Conexao{
     var $con;
     function conecta(){
         $servername = "localhost";
-        $database = "rodoviaria";
+        $database = "ecommerce";
         $username = "root";
         $password = "root";
 
