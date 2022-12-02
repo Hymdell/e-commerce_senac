@@ -23,7 +23,7 @@
                 <header><a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Login Técnico</header>
                 <form action="#" method="POST">
                     <div class="field input-field">
-                        <input type="text" placeholder="Usuário" class="input" name="usuario" required>
+                        <input type="text" placeholder="Email" class="input" name="email" required>
                     </div>
 
                     <div class="field input-field">
