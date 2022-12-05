@@ -30,6 +30,7 @@
                     <div class="field input-field">
                         <input type="password" placeholder="Senha" class="password" name="senha" required>
                         <i class='bx bx-hide eye-icon'></i>
+                        <input type="hidden" name="tabela" value="empresa">
                     </div>
 
                     <div class="field button-field">
