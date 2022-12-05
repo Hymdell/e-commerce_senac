@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if($_SESSION['logado'] != true){
+    header("Location:index.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -56,8 +62,8 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#">Empresas</a></li>
-              <li class="scroll-to-section"><a href="#">Técnicos</a></li>
+              <li class="scroll-to-section"><a href="mostra_empresas.php">Empresas</a></li>
+              <li class="scroll-to-section"><a href="mostra_tecnicos.php">Técnicos</a></li>
               <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#about">Destaques</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>

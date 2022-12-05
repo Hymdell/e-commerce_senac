@@ -61,7 +61,14 @@
               <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#about">Destaques</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
+              <?php
+              session_start();
+              if($_SESSION['logado'] == true){
+                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>';
+              }else{
+                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>';
+              }
+              ?>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -89,45 +96,6 @@
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="hidden-content">
                 <h4>Técnico 1</h4>
-                <p>Atendimentos apenas no meu local.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Técnico 2</h4>
-                <p>Atendimentos remotos e a domicílio.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Técnico 3</h4>
-                <p>Atendimentos remotos e a domicílio.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-              <div class="hidden-content">
-                <h4>Técnico 4</h4>
                 <p>Atendimentos apenas no meu local.</p>
               </div>
               <div class="showed-content">

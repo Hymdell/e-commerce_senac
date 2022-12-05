@@ -147,8 +147,8 @@ class Conexao{
     function busca_unica($tabela,$nome,$cpfcnpj){
         $x=0;
         $dados = array();
-        $result = $this->con->query("SELECT * FROM `$tabela` WHERE 1");
         if($tabela == "tecnicos"){
+            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Nome`='$nome' AND `CPFtec`='$cpfcnpj'");
             while($aux_query = $result->fetch_assoc()){
                 $dados[$x][0] = $aux_query['Nome'];
                 $dados[$x][1] = $aux_query['CPFtec'];
@@ -160,10 +160,11 @@ class Conexao{
                 $dados[$x][7] = $aux_query['Numero'];
                 $dados[$x][8] = $aux_query['Bairro'];
                 $dados[$x][9] = $aux_query['Complemento'];
-                $dados[$x][10] = $aux_query['Resumo'];
-                $x++;
+                $dados[$x][10] = $aux_query['Senha'];
+                $dados[$x][11] = $aux_query['Resumo'];
             }
         }else if($tabela == "empresas"){
+            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Nome`='$nome' AND `CNPJ`='$cpfcnpj'"); 
             while($aux_query = $result->fetch_assoc()){
                 $dados[$x][0] = $aux_query['Nome'];
                 $dados[$x][1] = $aux_query['CNPJ'];
@@ -175,10 +176,11 @@ class Conexao{
                 $dados[$x][7] = $aux_query['Numero'];
                 $dados[$x][8] = $aux_query['Bairro'];
                 $dados[$x][9] = $aux_query['Complemento'];
-                $dados[$x][10] = $aux_query['Resumo'];
-                $x++;
+                $dados[$x][10] = $aux_query['Senha'];
+                $dados[$x][11] = $aux_query['Resumo'];
             }
         }else if($tabela == "clientes"){
+            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Nome`='$nome' AND `CPFuser='$cpfcnpj'");
             while($aux_query = $result->fetch_assoc()){
                 $dados[$x][0] = $aux_query['Nome'];
                 $dados[$x][1] = $aux_query['CPFuser'];
@@ -190,7 +192,7 @@ class Conexao{
                 $dados[$x][7] = $aux_query['Numero'];
                 $dados[$x][8] = $aux_query['Bairro'];
                 $dados[$x][9] = $aux_query['Complemento'];
-                $x++;
+                $dados[$x][10] = $aux_query['Senha'];
             }
         }
 

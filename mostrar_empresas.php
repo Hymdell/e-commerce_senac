@@ -61,7 +61,14 @@
               <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#about">Destaques</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
+              <?php
+              session_start();
+              if($_SESSION['logado'] == true){
+                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>';
+              }else{
+                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>';
+              }
+              ?>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -90,45 +97,6 @@
               <div class="hidden-content">
                 <h4>Empresa 1</h4>
                 <p>Empresa para Empresas faça seu contrato.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Empresa 2</h4>
-                <p>Empresa atendimentos para todos.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Empresa 3</h4>
-                <p>Empresa para Empresas faça seu contrato.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-              <div class="hidden-content">
-                <h4>Empresa 4</h4>
-                <p>Empresa atendimentos para todos.</p>
               </div>
               <div class="showed-content">
                 <img src="assets/images/building.svg" alt="">

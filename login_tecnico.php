@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
                     <div class="field input-field">
                         <input type="password" placeholder="Senha" class="password" name="senha" required>
                         <i class='bx bx-hide eye-icon'></i>
-                        <input type="hidden" name="tabela" value="tecnico">
+                        <input type="hidden" name="tabela" value="tecnicos">
                     </div>
 
                     <div class="field button-field">

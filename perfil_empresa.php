@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if($_SESSION['logado'] != true){
+    header("Location:index.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -88,73 +94,73 @@
               <div class="col-lg-6">
                 <fieldset>
                     <label for="nome">Nome: </label>
-                  <input type="name" name="nome" id="nome" placeholder="Nome da empresa" autocomplete="on" required>
+                  <input type="name" name="nome" id="nome" placeholder="Nome da empresa" autocomplete="on" <?php echo $_SESSION['dados'][0]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="cpf">CNPJ: </label>
-                  <input type="text" name="cpfcnpj" id="cpf" placeholder="CNPJ" autocomplete="on" required>
+                  <input type="text" name="cpfcnpj" id="cpf" placeholder="CNPJ" autocomplete="on" <?php echo $_SESSION['dados'][1]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="email">Email: </label>
-                  <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email para contato" required="">
+                  <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email para contato" <?php echo $_SESSION['dados'][2]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="telefone">Telefone: </label>
-                  <input type="tel" name="telefone" id="telefone" placeholder="Telefone para contato" required="">
+                  <input type="tel" name="telefone" id="telefone" placeholder="Telefone para contato" <?php echo $_SESSION['dados'][3]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="estado">Estado: </label>
-                  <input type="text" name="estado" id="estado" placeholder="Estado da empresa" required="">
+                  <input type="text" name="estado" id="estado" placeholder="Estado da empresa" <?php echo $_SESSION['dados'][4]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="cidade">Cidade: </label>
-                  <input type="text" name="cidade" id="cidade" placeholder="Cidade da empresa" required="">
+                  <input type="text" name="cidade" id="cidade" placeholder="Cidade da empresa" <?php echo $_SESSION['dados'][5]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="rua">Rua: </label>
-                  <input type="text" name="rua" id="rua" placeholder="Rua da empresa" required="">
+                  <input type="text" name="rua" id="rua" placeholder="Rua da empresa" <?php echo $_SESSION['dados'][6]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="numero">Numero: </label>
-                  <input type="text" name="numero" id="numero" placeholder="Número da rua" required="">
+                  <input type="text" name="numero" id="numero" placeholder="Número da rua" <?php echo $_SESSION['dados'][7]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="bairro">Bairro: </label>
-                  <input type="number" name="bairro" id="bairro" placeholder="Bairro da empresa" required="">
+                  <input type="number" name="bairro" id="bairro" placeholder="Bairro da empresa" <?php echo $_SESSION['dados'][8]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="complemento">Complemento: </label>
-                  <input type="text" name="complemento" id="complemento" placeholder="Complemento do endereço" required="">
+                  <input type="text" name="complemento" id="complemento" placeholder="Complemento do endereço" <?php echo $_SESSION['dados'][9]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="senha">Complemento: </label>
-                  <input type="password" name="senha" id="senha" placeholder="Sua senha" required="">
+                  <input type="password" name="senha" id="senha" placeholder="Sua senha" <?php echo $_SESSION['dados'][10]; ?> required="">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="resumo">Resumo:</label>
-                  <textarea name="resumo" type="text" class="form-control" id="resumo" placeholder="Um resumo sobre a empresa e seus serviços" required=""></textarea>  
+                  <textarea name="resumo" type="text" class="form-control" id="resumo" placeholder="Um resumo sobre a empresa e seus serviços" <?php echo $_SESSION['dados'][11]; ?> required=""></textarea>  
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -197,5 +203,30 @@
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
+  <script>
+        const forms = document.querySelector(".forms"),
+        pwShowHide = document.querySelectorAll(".eye-icon"),
+        links = document.querySelectorAll(".link");
+        pwShowHide.forEach(eyeIcon => {
+            eyeIcon.addEventListener("click", () => {
+                let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+                pwFields.forEach(password => {
+                    if (password.type === "password") {
+                        password.type = "text";
+                        eyeIcon.classList.replace("bx-hide", "bx-show");
+                        return;
+                    }
+                    password.type = "password";
+                    eyeIcon.classList.replace("bx-show", "bx-hide");
+                })
+            })
+        })
+        links.forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault(); //preventing form submit
+                forms.classList.toggle("show-signup");
+            })
+        })
+    </script>
 </body>
 </html>
