@@ -65,7 +65,7 @@ class Conexao{
 
     function atualiza_perfil($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento,$resumo){
         if($tabela == "empresas"){
-            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo' WHERE `CPNJ` = $cpfcnpj";
+            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo' WHERE `CNPJ` = $cpfcnpj";
         }elseif($tabela == "tecnicos"){
             $sql = "UPDATE `tecnicos` SET `Nome`='$nome',`CPFtec`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo' WHERE `CPFtec` = $cpfcnpj";
         }elseif($tabela == "usuarios"){
@@ -195,7 +195,6 @@ class Conexao{
                 $dados[10] = $aux_query['Senha'];
             }
         }
-
         $this->con->close();
         return $dados;
     }

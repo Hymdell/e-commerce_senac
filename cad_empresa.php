@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <div class="title">
-        <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Registro EMPRESA</div>
+        <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Registro EMPRESA<br>Após seu cadastro acesse seu perfil para verificar as informações e escrever seu resumo.</div>
     <div class="content">
       <form action="cad_verifica.php" method="POST">
         <div class="user-details">
@@ -21,7 +21,7 @@
           </div>
           <div class="input-box">
             <span class="details">CPNJ</span>
-            <input type="text" name="cfpcnpj" placeholder="CPNJ da Empresa" required>
+            <input type="text" name="cpfcnpj" placeholder="CPNJ da Empresa" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -49,7 +49,7 @@
           </div>
           <div class="input-box">
             <span class="details">Rua</span>
-            <input type="text" name="empresa" placeholder="Rua da empresa" required>
+            <input type="text" name="rua" placeholder="Rua da empresa" required>
           </div>
           <div class="input-box">
             <span class="details">Número</span>

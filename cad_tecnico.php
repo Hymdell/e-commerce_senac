@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <div class="title">
-    <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a>Registro TÉCNICO</div>
+    <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a>Registro TÉCNICO<br>Após seu cadastro acesse seu perfil para verificar as informações e escrever seu resumo</div>
     <div class="content">
       <form action="cad_verifica.php" method="POST">
         <div class="user-details">

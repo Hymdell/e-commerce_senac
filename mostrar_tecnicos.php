@@ -74,7 +74,6 @@
               ?>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
               <?php
-              $dados = $_SESSION['dados'];
               if($_SESSION['logado'] == true){
                 echo '<li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>';
               }else{
@@ -102,23 +101,28 @@
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <a href="mostra_unico.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>Técnico 1</h4>
-                <p>Atendimentos apenas no meu local.</p>
+      <?php
+        $dados = $_SESSION['dados'];
+        $tamanho = count($dados);
+        for($x=0;$x<$tamanho;$x++){
+            echo 
+            '<div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <a href="mostra_unico.php">
+                  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="hidden-content">
+                      <h4>'. $dados[$x][0] .'</h4>
+                      <p>'. $dados[$x][11] .'</p>
+                    </div>
+                    <div class="showed-content">
+                      <img src="assets/images/wrench.png" alt="">
+                    </div>
+                   </div>
+                 </a>
               </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
+            </div>';
+          }
+      ?>
     </div>
   </div>
 

@@ -68,6 +68,7 @@
               <li class="scroll-to-section"><a href="index_logado.php">Destaques</a></li>
               <li class="scroll-to-section"><a href="index_logado.php">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="index_logado.php">Contato</a></li>
+              <li class="scroll-to-section"><a href="index.php">Sair</a></li>
               <li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>
             </ul>        
             <a class='menu-trigger'>
@@ -172,6 +173,7 @@
               </div>
               <div class="col-lg-1">
                 <fieldset>
+                  <input type="hidden" name="tabela" value="tecnicos">
                   <button type="submit" id="form-submit" class="main-button ">Salvar</button>
                 </fieldset>
               </div>

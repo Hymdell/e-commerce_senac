@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR" >
 <head>
@@ -145,7 +148,13 @@
       <div class="number">4</div>
     </div>
     <div class="subtitle">Oops. Parece que você foi longe demais.</div>
-    <a href="index.php"><button>Voltar</button></a>
+    <?php
+      if($_SESSION['logado'] == true){
+        echo '<a href="index_logado.php"><button>Voltar</button></a>';
+      }else{
+        echo '<a href="index.php"><button>Voltar</button></a>';
+      }
+    ?>
   </div>
 </div>
 <!-- partial -->

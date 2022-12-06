@@ -102,23 +102,28 @@
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <a href="mostra_unico.php">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>Empresa 1</h4>
-                <p>Empresa para Empresas faça seu contrato.</p>
+      <?php
+        $dados = $_SESSION['dados'];
+        $tamanho = count($dados);
+        for($x=0;$x<$tamanho;$x++){
+            echo 
+            '<div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <a href="mostra_unico.php">
+                  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="hidden-content">
+                      <h4>'. $dados[$x][0] .'</h4>
+                      <p>'. $dados[$x][10] .'</p>
+                    </div>
+                    <div class="showed-content">
+                      <img src="assets/images/wrench.png" alt="">
+                    </div>
+                   </div>
+                 </a>
               </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
+            </div>';
+          }
+      ?>
     </div>
   </div>
 
