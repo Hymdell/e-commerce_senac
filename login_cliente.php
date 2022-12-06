@@ -22,7 +22,7 @@
         <div class="form login">
             <div class="form-content">
                 <header><a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Login Cliente</header>
-                <form action="#" method="POST">
+                <form action="login_verifica.php" method="POST">
                     <div class="field input-field">
                         <input type="text" placeholder="Email" class="input" name="email" required>
                     </div>
@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="field button-field">
-                        <button>Entrar</button>
+                        <button><input type="submit" value="Entrar"></button>
                     </div>
                 </form>
             </div>

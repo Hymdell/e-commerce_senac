@@ -49,20 +49,32 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.php" class="logo">
-              <h4>Tech<span>Care</span></h4>
-            </a>
+            <?php
+              session_start();
+              if($_SESSION['logado'] == true){
+                echo '<a href="index_logado.php" class="logo"><h4>Tech<span>Care</span></h4></a>';
+              }else{
+                echo '<a href="index.php" class="logo"><h4>Tech<span>Care</span></h4></a>';
+              }
+            ?>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#">Empresas</a></li>
-              <li class="scroll-to-section"><a href="#">Técnicos</a></li>
-              <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
-              <li class="scroll-to-section"><a href="#about">Destaques</a></li>
+              <li class="scroll-to-section"><a href="mostra_empresas.php">Empresas</a></li>
+              <li class="scroll-to-section"><a href="mostra_tecnicos.php">Técnicos</a></li>
+              <?php 
+              if($_SESSION['logado'] == true){
+                echo '<li class="scroll-to-section"><a href="index_logado.php">Sobre Nós</a></li>';
+                echo '<li class="scroll-to-section"><a href="index_logado.php">Destaques</a></li>';
+              }else{
+                echo '<li class="scroll-to-section"><a href="index.php">Sobre Nós</a></li>';
+                echo '<li class="scroll-to-section"><a href="index.php">Destaques</a></li>';
+              }
+              ?>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
               <?php
-              session_start();
+              $dados = $_SESSION['dados'];
               if($_SESSION['logado'] == true){
                 echo '<li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>';
               }else{
@@ -88,12 +100,14 @@
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h2>Técnico X</h2>
-                <h5>Estado: RS | Cidade: Tramandaí</h5>
-                <h5>Endereço: Avenida nida, 403, Centro, prédio azul.</h5>
-                <h5>Email: tecnico@email.com<br>Telefone: (+55) 51 0 4002-8922</h5>
-                <br>
-                <p class="texto">RESUMO SOBRE o TÉCNICO</p>
+                <?php
+                echo "<h2>".$dados[0]."</h2>";
+                echo "<h5>Estado: ".$dados[4]." | Cidade: ".$dados[5]."</h5>";
+                echo "<h5>Endereço: ".$dados[6].", ".$dados[7].", ".$dados[8].", ".$dados[9]."</h5>";
+                echo "<h5>Email: ".$dados[1]."<br>Telefone: (+55)".$dados[3]."</h5>";
+                echo"<br>";
+                echo '<p class="texto">'.$dados[11].'</p>';
+                ?>
               </div>
             </div>
             <div class="col-lg-6">

@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if($_SESSION['logado'] != true){
+  if($_SESSION['logado'] == false){
     header("Location:index.php");
   }
 ?>
@@ -67,7 +67,7 @@
               <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#about">Destaques</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Login</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -170,7 +170,7 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Veja aqui <a href="#"><em>Empresas</em></a> e <a href="#"><span>Técnicos</span></a> Em destaque</h2>
+            <h2>Veja aqui <a href="mostra_empresas.php"><em>Empresas</em></a> e <a href="mostra_tecnicos.php"><span>Técnicos</span></a> Em destaque</h2>
           </div>
         </div>
       </div>

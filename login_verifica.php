@@ -2,6 +2,9 @@
     include "conexao.php";
     session_start();
     $con = new Conexao();
+    $con->conecta();
+    $_SESSION['tabela']=$_POST['tabela'];
+    $_SESSION['email']=$_POST['email'];
     $verifica = $con->login($_POST['tabela'],$_POST['email'],$_POST['senha']);
     if($verifica == true){
         $_SESSION['logado'] = true;

@@ -60,8 +60,8 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#">Empresas</a></li>
-              <li class="scroll-to-section"><a href="#">Técnicos</a></li>
+              <li class="scroll-to-section"><a href="mostra_empresas.php">Empresas</a></li>
+              <li class="scroll-to-section"><a href="mostra_tecnicos.php">Técnicos</a></li>
               <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#about">Destaques</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
@@ -168,7 +168,7 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Veja aqui <a href="#"><em>Empresas</em></a> e <a href="#"><span>Técnicos</span></a> Em destaque</h2>
+            <h2>Veja aqui <a href="mostra_empresas.php"><em>Empresas</em></a> e <a href="mostra_tecnicos.php"><span>Técnicos</span></a> Em destaque</h2>
           </div>
         </div>
       </div>

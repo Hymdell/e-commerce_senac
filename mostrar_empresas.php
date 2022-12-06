@@ -49,21 +49,33 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.php" class="logo">
-              <h4>Tech<span>Care</span></h4>
-            </a>
+            <?php
+              session_start();
+              if($_SESSION['logado'] == true){
+                echo '<a href="index_logado.php" class="logo"><h4>Tech<span>Care</span></h4></a>';
+              }else{
+                echo '<a href="index.php" class="logo"><h4>Tech<span>Care</span></h4></a>';
+              }
+            ?>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#">Empresas</a></li>
-              <li class="scroll-to-section"><a href="#">Técnicos</a></li>
-              <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
-              <li class="scroll-to-section"><a href="#about">Destaques</a></li>
+              <li class="scroll-to-section"><a href="mostra_empresas.php">Empresas</a></li>
+              <li class="scroll-to-section"><a href="mostra_tecnicos.php">Técnicos</a></li>
+              <?php 
+              if($_SESSION['logado'] == true){
+                echo '<li class="scroll-to-section"><a href="index_logado.php">Sobre Nós</a></li>';
+                echo '<li class="scroll-to-section"><a href="index_logado.php">Destaques</a></li>';
+              }else{
+                echo '<li class="scroll-to-section"><a href="index.php">Sobre Nós</a></li>';
+                echo '<li class="scroll-to-section"><a href="index.php">Destaques</a></li>';
+              }
+              ?>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
               <?php
-              session_start();
               if($_SESSION['logado'] == true){
+                $dados = $_SESSION['dados'];
                 echo '<li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>';
               }else{
                 echo '<li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>';
@@ -90,9 +102,10 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-          <a href="#">
+          <a href="mostra_unico.php">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="hidden-content">
                 <h4>Empresa 1</h4>
@@ -105,6 +118,7 @@
           </a>
         </div>
       </div>
+
     </div>
   </div>
 

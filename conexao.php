@@ -14,21 +14,22 @@ class Conexao{
     }
 
     function login($tabela,$email,$senha){
+        $this->conecta();
         $dados = array();
         if($tabela == "empresas"){
-            $result = $this->con->query("SELECT `Email`, `Senha` FROM `empresas` WHERE `Email` = $email AND `Senha` = $senha");
+            $result = $this->con->query("SELECT `Email`, `Senha` FROM `empresas` WHERE `Email` = '$email' AND `Senha` = '$senha'");
             while($aux_query = $result->fetch_assoc()){
                 $dados[0] = $aux_query['Email'];
                 $dados[1] = $aux_query['Senha'];
             }
         }elseif($tabela == "tecnicos"){
-            $result = $this->con->query("SELECT `Email`, `Senha` FROM `tecnicos` WHERE `Email` = $email AND `Senha` = $senha");
+            $result = $this->con->query("SELECT `Email`, `Senha` FROM `tecnicos` WHERE `Email` = '$email' AND `Senha` = '$senha'");
             while($aux_query = $result->fetch_assoc()){
                 $dados[0] = $aux_query['Email'];
                 $dados[1] = $aux_query['Senha'];
             }
         }elseif($tabela == "usuarios"){
-            $result = $this->con->query("SELECT `Email`, `Senha` FROM `usuarios` WHERE `Email` = $email AND `Senha` = $senha");
+            $result = $this->con->query("SELECT `Email`, `Senha` FROM `usuarios` WHERE `Email` = '$email' AND `Senha` = '$senha'");
             while($aux_query = $result->fetch_assoc()){
                 $dados[0] = $aux_query['Email'];
                 $dados[1] = $aux_query['Senha'];
@@ -82,11 +83,11 @@ class Conexao{
 
     function deleta_perfil($tabela,$cpfcnpj,$email){
         if($tabela == "empresas"){
-            $sql = "DELETE FROM `empresas` WHERE `CPNJ` = $cpfcnpj AND `Email` = $email;";
+            $sql = "DELETE FROM `empresas` WHERE `CPNJ` = '$cpfcnpj' AND `Email` = '$email';";
         }elseif($tabela == "tecnicos"){
-            $sql = "DELETE FROM `tecnicos` WHERE `CPNJ` = $cpfcnpj AND `Email` = $email;";
+            $sql = "DELETE FROM `tecnicos` WHERE `CPNJ` = '$cpfcnpj' AND `Email` = '$email';";
         }elseif($tabela == "usuarios"){
-            $sql = "DELETE FROM `usuarios` WHERE `CPNJ` = $cpfcnpj AND `Email` = $email;";
+            $sql = "DELETE FROM `usuarios` WHERE `CPNJ` = '$cpfcnpj' AND `Email` = '$email';";
         }
 
         if($this->con->query($sql) == TRUE){
@@ -144,55 +145,54 @@ class Conexao{
         return $tecnicos;
     }
 
-    function busca_unica($tabela,$nome,$cpfcnpj){
-        $x=0;
+    function busca_unica($tabela,$email){
         $dados = array();
         if($tabela == "tecnicos"){
-            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Nome`='$nome' AND `CPFtec`='$cpfcnpj'");
+            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Email`='$email'");
             while($aux_query = $result->fetch_assoc()){
-                $dados[$x][0] = $aux_query['Nome'];
-                $dados[$x][1] = $aux_query['CPFtec'];
-                $dados[$x][2] = $aux_query['Email'];
-                $dados[$x][3] = $aux_query['Telefone'];
-                $dados[$x][4] = $aux_query['Estado'];
-                $dados[$x][5] = $aux_query['Cidade'];
-                $dados[$x][6] = $aux_query['Rua'];
-                $dados[$x][7] = $aux_query['Numero'];
-                $dados[$x][8] = $aux_query['Bairro'];
-                $dados[$x][9] = $aux_query['Complemento'];
-                $dados[$x][10] = $aux_query['Senha'];
-                $dados[$x][11] = $aux_query['Resumo'];
+                $dados[0] = $aux_query['Nome'];
+                $dados[1] = $aux_query['Email'];
+                $dados[2] = $aux_query['CPFtec'];
+                $dados[3] = $aux_query['Telefone'];
+                $dados[4] = $aux_query['Estado'];
+                $dados[5] = $aux_query['Cidade'];
+                $dados[6] = $aux_query['Rua'];
+                $dados[7] = $aux_query['Numero'];
+                $dados[8] = $aux_query['Bairro'];
+                $dados[9] = $aux_query['Complemento'];
+                $dados[10] = $aux_query['Senha'];
+                $dados[11] = $aux_query['Resumo'];
             }
         }else if($tabela == "empresas"){
-            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Nome`='$nome' AND `CNPJ`='$cpfcnpj'"); 
+            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Email`='$email'"); 
             while($aux_query = $result->fetch_assoc()){
-                $dados[$x][0] = $aux_query['Nome'];
-                $dados[$x][1] = $aux_query['CNPJ'];
-                $dados[$x][2] = $aux_query['Email'];
-                $dados[$x][3] = $aux_query['Telefone'];
-                $dados[$x][4] = $aux_query['Estado'];
-                $dados[$x][5] = $aux_query['Cidade'];
-                $dados[$x][6] = $aux_query['Rua'];
-                $dados[$x][7] = $aux_query['Numero'];
-                $dados[$x][8] = $aux_query['Bairro'];
-                $dados[$x][9] = $aux_query['Complemento'];
-                $dados[$x][10] = $aux_query['Senha'];
-                $dados[$x][11] = $aux_query['Resumo'];
+                $dados[0] = $aux_query['Nome'];
+                $dados[1] = $aux_query['CNPJ'];
+                $dados[2] = $aux_query['Email'];
+                $dados[3] = $aux_query['Telefone'];
+                $dados[4] = $aux_query['Estado'];
+                $dados[5] = $aux_query['Cidade'];
+                $dados[6] = $aux_query['Rua'];
+                $dados[7] = $aux_query['Numero'];
+                $dados[8] = $aux_query['Bairro'];
+                $dados[9] = $aux_query['Complemento'];
+                $dados[10] = $aux_query['Senha'];
+                $dados[11] = $aux_query['Resumo'];
             }
-        }else if($tabela == "clientes"){
-            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Nome`='$nome' AND `CPFuser='$cpfcnpj'");
+        }else if($tabela == "usuarios"){
+            $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Email`='$email'");
             while($aux_query = $result->fetch_assoc()){
-                $dados[$x][0] = $aux_query['Nome'];
-                $dados[$x][1] = $aux_query['CPFuser'];
-                $dados[$x][2] = $aux_query['Email'];
-                $dados[$x][3] = $aux_query['Telefone'];
-                $dados[$x][4] = $aux_query['Estado'];
-                $dados[$x][5] = $aux_query['Cidade'];
-                $dados[$x][6] = $aux_query['Rua'];
-                $dados[$x][7] = $aux_query['Numero'];
-                $dados[$x][8] = $aux_query['Bairro'];
-                $dados[$x][9] = $aux_query['Complemento'];
-                $dados[$x][10] = $aux_query['Senha'];
+                $dados[0] = $aux_query['Nome'];
+                $dados[1] = $aux_query['CPFuser'];
+                $dados[2] = $aux_query['Email'];
+                $dados[3] = $aux_query['Telefone'];
+                $dados[4] = $aux_query['Estado'];
+                $dados[5] = $aux_query['Cidade'];
+                $dados[6] = $aux_query['Rua'];
+                $dados[7] = $aux_query['Numero'];
+                $dados[8] = $aux_query['Bairro'];
+                $dados[9] = $aux_query['Complemento'];
+                $dados[10] = $aux_query['Senha'];
             }
         }
 
