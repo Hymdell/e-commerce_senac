@@ -65,7 +65,7 @@
               <li class="scroll-to-section"><a href="#highlights">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="#about">Destaques</a></li>
               <li class="scroll-to-section"><a href="#contact">Contato</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>
+              <li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login/Cadastro</a></div></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>

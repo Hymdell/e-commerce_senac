@@ -161,8 +161,14 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
+                  <label for="resumolinha">Resumo de uma Linha: </label>
+                  <input type="text" name="resumolinha" id="resumolinha" placeholder="Resumo de uma linha" <?php echo 'value ="' . $dados[11] . '"'; ?>required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
                   <label for="resumo">Resumo:</label>
-                  <textarea name="resumo" type="text" class="form-control" id="resumo" placeholder="Um resumo sobre a empresa e seus serviços" required><?php echo $dados[11]; ?></textarea>  
+                  <textarea name="resumo" type="text" class="form-control" id="resumo" placeholder="Um resumo sobre a empresa e seus serviços" required><?php echo $dados[12]; ?></textarea>  
                 </fieldset>
               </div>
               <div class="col-lg-12">

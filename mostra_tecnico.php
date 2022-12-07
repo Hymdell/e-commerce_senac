@@ -78,7 +78,7 @@
               if($_SESSION['logado'] == true){
                 echo '<li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>';
               }else{
-                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>';
+                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login/Cadastro</a></div></li>';
               }
               ?>
             </ul>        

@@ -78,7 +78,7 @@
                 $dados = $_SESSION['dados'];
                 echo '<li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>';
               }else{
-                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login</a></div></li>';
+                echo '<li class="scroll-to-section"><div class="main-red-button"><a href="escolha.php">Login/Cadastro</a></div></li>';
               }
               ?>
             </ul>        
@@ -107,21 +107,24 @@
         $tamanho = count($dados);
         for($x=0;$x<$tamanho;$x++){
             echo 
-            '<div class="row">
-              <div class="col-lg-3 col-sm-6">
-                <a href="mostra_unico.php">
-                  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="hidden-content">
-                      <h4>'. $dados[$x][0] .'</h4>
-                      <p>'. $dados[$x][10] .'</p>
+            '<form action="mostra_unico.php" method="POST">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                      <div class="hidden-content">
+                        <h4>'. $dados[$x][0] .'</h4>
+                        <p>'. $dados[$x][11] .'</p>
+                        <input type="hidden" name="tabela" value="empresas">
+                        <input type="hidden" name="email" value="'. $dados[$x][2] .'">
+                        <input class="botao" type="submit" value="Ver Empresa">
+                      </div>
+                      <div class="showed-content">
+                        <img src="assets/images/wrench.png" alt="">
+                      </div>
                     </div>
-                    <div class="showed-content">
-                      <img src="assets/images/wrench.png" alt="">
-                    </div>
-                   </div>
-                 </a>
+                </div>
               </div>
-            </div>';
+            </form>';
           }
       ?>
     </div>
