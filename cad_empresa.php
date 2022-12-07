@@ -11,8 +11,9 @@
 <body>
   <div class="container">
     <div class="title">
-        <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Registro EMPRESA<br>Após seu cadastro acesse seu perfil para verificar as informações e escrever seu resumo.</div>
+        <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Registro EMPRESA</div>
     <div class="content">
+      <center><h3><u>!Após seu cadastro acesse seu perfil para verificar as informações e escrever seus resumos!</u></h3></center>
       <form action="cad_verifica.php" method="POST">
         <div class="user-details">
           <div class="input-box">
