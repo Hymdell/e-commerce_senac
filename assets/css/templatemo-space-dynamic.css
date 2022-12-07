@@ -1578,6 +1578,8 @@ responsive
 
 .texto{
   font-size: large;
+  max-width:500px;
+  word-wrap:break-word;
 }
 
 input:invalid{

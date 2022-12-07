@@ -23,11 +23,11 @@
                 <header><a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Login Técnico</header>
                 <form action="login_verifica.php" method="POST">
                     <div class="field input-field">
-                        <input type="text" placeholder="Email" class="input" name="email" required>
+                        <input type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" class="input" name="email" required>
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Senha" class="password" name="senha" required>
+                        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" placeholder="Senha" class="password" name="senha" required>
                         <i class='bx bx-hide eye-icon'></i>
                         <input type="hidden" name="tabela" value="tecnicos">
                     </div>

@@ -21,7 +21,7 @@
           </div>
           <div class="input-box">
             <span class="details">CPF</span>
-            <input type="text" name="cpfcnpj" placeholder="Seu CPF" required>
+            <input type="text" maxlength="14" minlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpfcnpj" placeholder="Seu CPF" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -29,19 +29,19 @@
           </div>
           <div class="input-box">
             <span class="details">Telefone</span>
-            <input type="tel" name="telefone" placeholder="Número para contato" required>
+            <input type="tel" maxlength="13" minlength="13" name="telefone" pattern="(\([0-9]{2}\))([0-9]{9})" placeholder="Telefone ex:(xx)xxxxxxxxx" required>
           </div>
           <div class="input-box">
             <span class="details">Senha</span>
-            <input type="password" name="senha" placeholder="Sua Senha" required>
+            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha" placeholder="Sua Senha" required>
           </div>
           <div class="input-box">
             <span class="details">Confirme a senha</span>
-            <input type="password" name="senha2" placeholder="Sua Senha novamente" required>
+            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha2" placeholder="Sua Senha novamente" required>
           </div>
           <div class="input-box">
             <span class="details">Estado</span>
-            <input type="text" name="estado" placeholder="Seu Estado, EX: SP" required>
+            <input type="text" maxlength="2" minlength="2"  pattern="[A-Za-z0-9]{2}" name="estado" placeholder="Seu Estado, EX: SP" required>
           </div>
           <div class="input-box">
             <span class="details">Cidade</span>
@@ -53,7 +53,7 @@
           </div>
           <div class="input-box">
             <span class="details">Número</span>
-            <input type="text" name="numero" placeholder="Número da sua casa/prédio" required>
+            <input type="number" maxlength="4" minlength="2" pattern="[0-9]" name="numero" placeholder="Número da sua casa/prédio" required>
           </div>
           <div class="input-box">
             <span class="details">Bairro</span>

@@ -102,7 +102,7 @@
               <div class="col-lg-6">
                 <fieldset>
                   <label for="cpf">CPF: </label>
-                  <input type="text" name="cpfcnpj" id="cpf" placeholder="CPF" autocomplete="on" <?php echo 'value ="' . $dados[1] . '"'; ?> required>
+                  <input type="text" maxlength="15" minlength="15" name="cpfcnpj" id="cpf" placeholder="CPF" autocomplete="on" <?php echo 'value ="' . $dados[1] . '"'; ?> required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
@@ -114,13 +114,13 @@
               <div class="col-lg-6">
                 <fieldset>
                   <label for="telefone">Telefone: </label>
-                  <input type="tel" name="telefone" id="tel" placeholder="Seu Telefone" <?php echo 'value ="' . $dados[3] . '"'; ?> required>
+                  <input type="tel" maxlength="13" minlength="13" name="telefone" pattern="(\([0-9]{2}\))([0-9]{9})" placeholder="Telefone ex:(xx)xxxxxxxxx" <?php echo 'value ="' . $dados[3] . '"'; ?> required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="estado">Estado: </label>
-                  <input type="text" name="estado" id="estado" placeholder="Seu Estado" <?php echo 'value ="' . $dados[4] . '"'; ?> required>
+                  <input type="text" maxlength="2" minlength="2"  pattern="[A-Za-z]{2}" name="estado" id="estado" placeholder="Seu Estado" <?php echo 'value ="' . $dados[4] . '"'; ?> required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
@@ -138,7 +138,7 @@
               <div class="col-lg-6">
                 <fieldset>
                   <label for="numero">Numero: </label>
-                  <input type="text" name="numero" id="numero" placeholder="Número da rua" <?php echo 'value ="' . $dados[7] . '"'; ?> required>
+                  <input type="number" maxlength="4" minlength="2" pattern="[0-9]" name="numero" id="numero" placeholder="Número da rua" <?php echo 'value ="' . $dados[7] . '"'; ?> required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
@@ -156,7 +156,7 @@
               <div class="col-lg-6">
                 <fieldset>
                   <label for="senha">Senha: </label>
-                  <input type="password" name="senha" id="senha" placeholder="Sua senha" <?php echo 'value ="' . $dados[10] . '"'; ?> required>
+                  <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha" id="senha" placeholder="Sua senha" <?php echo 'value ="' . $dados[10] . '"'; ?> required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
