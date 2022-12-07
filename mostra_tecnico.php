@@ -106,7 +106,7 @@
                 echo "<h5>Endereço: ".$dados[6].", ".$dados[7].", ".$dados[8].", ".$dados[9]."</h5>";
                 echo "<h5>Email: ".$dados[1]."<br>Telefone: (+55)".$dados[3]."</h5>";
                 echo"<br>";
-                echo '<p class="texto">'.$dados[11].'</p>';
+                echo '<p class="texto">'.$dados[12].'</p>';
                 ?>
               </div>
             </div>

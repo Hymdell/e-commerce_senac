@@ -139,7 +139,7 @@ class Conexao{
             $tecnicos[$x][8] = $aux_query['Bairro'];
             $tecnicos[$x][9] = $aux_query['Complemento'];
             $tecnicos[$x][10] = $aux_query['Resumo'];
-            $empresas[$x][11] = $aux_query['ResumoLinha'];
+            $tecnicos[$x][11] = $aux_query['ResumoLinha'];
             $x++;
         }
 
@@ -153,8 +153,8 @@ class Conexao{
             $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Email`='$email'");
             while($aux_query = $result->fetch_assoc()){
                 $dados[0] = $aux_query['Nome'];
-                $dados[1] = $aux_query['Email'];
-                $dados[2] = $aux_query['CPFtec'];
+                $dados[1] = $aux_query['CPFtec'];
+                $dados[2] = $aux_query['Email'];
                 $dados[3] = $aux_query['Telefone'];
                 $dados[4] = $aux_query['Estado'];
                 $dados[5] = $aux_query['Cidade'];
@@ -163,7 +163,7 @@ class Conexao{
                 $dados[8] = $aux_query['Bairro'];
                 $dados[9] = $aux_query['Complemento'];
                 $dados[10] = $aux_query['Senha'];
-                $dados[12] = $aux_query['ResumoLinha'];
+                $dados[11] = $aux_query['ResumoLinha'];
                 $dados[12] = $aux_query['Resumo'];
             }
         }else if($tabela == "empresas"){
