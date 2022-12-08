@@ -173,8 +173,8 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <label for="foto">Logo da empresa ou foto do local: </label>
-                  <input type="file" name="foto" id="foto" placeholder="Foto de Perfil">
+                  <label for="imagem">Logo da empresa ou foto do local: </label>
+                  <input type="file" name="imagem" id="imagem" <?php echo 'value ="' . $dados[13] . '"'; ?>placeholder="Foto de Perfil">
                 </fieldset>
               </div>
               <div class="col-lg-1">

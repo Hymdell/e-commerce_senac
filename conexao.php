@@ -63,11 +63,11 @@ class Conexao{
         } 
     }
 
-    function atualiza_perfil($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento,$resumo,$resumolinha){
+    function atualiza_perfil($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento,$resumo,$resumolinha,$imagem){
         if($tabela == "empresas"){
-            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha' WHERE `CNPJ` = '$cpfcnpj'";
+            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha',`Imagem`='$imagem' WHERE `CNPJ` = '$cpfcnpj'";
         }elseif($tabela == "tecnicos"){
-            $sql = "UPDATE `tecnicos` SET `Nome`='$nome',`CPFtec`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha' WHERE `CPFtec` = '$cpfcnpj'";
+            $sql = "UPDATE `tecnicos` SET `Nome`='$nome',`CPFtec`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha',`Imagem`='$imagem' WHERE `CPFtec` = '$cpfcnpj'";
         }elseif($tabela == "usuarios"){
             $sql = "UPDATE `usuarios` SET `Nome`='$nome',`CPFuser`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento' WHERE `CPFuser` = '$cpfcnpj'";
         }
@@ -165,6 +165,7 @@ class Conexao{
                 $dados[10] = $aux_query['Senha'];
                 $dados[11] = $aux_query['ResumoLinha'];
                 $dados[12] = $aux_query['Resumo'];
+                $dados[13] = $aux_query['Imagem'];
             }
         }else if($tabela == "empresas"){
             $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Email`='$email'"); 
@@ -182,6 +183,7 @@ class Conexao{
                 $dados[10] = $aux_query['Senha'];
                 $dados[11] = $aux_query['ResumoLinha'];
                 $dados[12] = $aux_query['Resumo'];
+                $dados[13] = $aux_query['Imagem'];
             }
         }else if($tabela == "usuarios"){
             $result = $this->con->query("SELECT * FROM `$tabela` WHERE `Email`='$email'");

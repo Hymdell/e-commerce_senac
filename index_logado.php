@@ -176,56 +176,48 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-          <a href="#">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="hidden-content">
-                <h4>Empresa 1</h4>
+                <h4>Mojotech</h4>
                 <p>Empresa para Empresas faça seu contrato.</p>
               </div>
               <div class="showed-content">
                 <img src="assets/images/building.svg" alt="">
               </div>
             </div>
-          </a>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <a href="#">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
               <div class="hidden-content">
-                <h4>Empresa 2</h4>
+                <h4>Cybertech</h4>
                 <p>Empresa atendimentos para todos.</p>
               </div>
               <div class="showed-content">
                 <img src="assets/images/building.svg" alt="">
               </div>
             </div>
-          </a>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <a href="#">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="hidden-content">
-                <h4>Técnico 1</h4>
+                <h4>Julio Tech</h4>
                 <p>Atendimentos remotos e a domicílio.</p>
               </div>
               <div class="showed-content">
                 <img src="assets/images/wrench.png" alt="">
               </div>
             </div>
-          </a>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <a href="#">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
               <div class="hidden-content">
-                <h4>Técnico 2</h4>
+                <h4>Ademir dos santos</h4>
                 <p>Atendimentos apenas no meu local.</p>
               </div>
               <div class="showed-content">
                 <img src="assets/images/wrench.png" alt="">
               </div>
             </div>
-          </a>
         </div>
       </div>
     </div>

@@ -113,7 +113,7 @@
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/" alt="IMAGEM AQUI">
+                <img src="assets/images/<?php echo $dados[13] ?>" alt="IMAGEM AQUI">
               </div>
             </div>
           </div>
