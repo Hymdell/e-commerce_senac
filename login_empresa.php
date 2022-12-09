@@ -14,7 +14,12 @@
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>TECHARE Login</title>
-
+    <?php
+    session_start();
+    if($_SESSION['existe'] == false){
+        echo '<style> p{color: white;background-color: red;}</style>';
+    }
+    ?>
 </head>
 
 <body>
@@ -22,6 +27,11 @@
         <div class="form login">
             <div class="form-content">
                 <header><a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a> Login Empresa</header>
+                <?php  
+                    if($_SESSION['existe'] == false){
+                        echo "<center><p>Verifique seu email e senha</p></center>";
+                    }
+                ?>
                 <form action="login_verifica.php" method="POST">
                     <div class="field input-field">
                         <input type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" class="input" name="email" required>

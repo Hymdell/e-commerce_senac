@@ -34,11 +34,12 @@
           </div>
           <div class="input-box">
             <span class="details">Senha</span>
-            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha" placeholder="Sua Senha" required>
+            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha" id="senha" placeholder="Sua Senha" required>
           </div>
           <div class="input-box">
             <span class="details">Confirme a senha</span>
-            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha2" placeholder="Sua Senha novamente" required>
+            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha2"id="senha2" placeholder="Sua Senha novamente" required>
+            <p id="mensagem"></p>
           </div>
           <div class="input-box">
             <span class="details">Estado</span>

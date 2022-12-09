@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION['existe'] = true;
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
