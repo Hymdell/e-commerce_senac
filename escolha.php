@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['existe'] = true;
+$_SESSION['erro'] = true;
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

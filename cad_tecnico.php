@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="assets/css/cad.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Registro Técnico</title>
+     <?php
+    session_start();
+    if($_SESSION['erro'] == false){
+        echo '<style> p{color: white;background-color: red;}</style>';
+    }
+    ?>
    </head>
 <body>
   <div class="container">
     <div class="title">
     <a href="escolha.php"><img src="assets/images/arrow-left-circle.svg" width="30"  alt=""></a>Registro TÉCNICO</div>
     <center><h3><u>!Após seu cadastro acesse seu perfil para verificar as informações e escrever seus resumos!</u></h3></center>
+    <?php  
+      if($_SESSION['erro'] == false){
+        echo "<center><p>Verifique seus dados e tente novamente</p></center>";
+      }
+    ?>
     <div class="content">
       <form action="cad_verifica.php" method="POST">
         <div class="user-details">
@@ -30,11 +41,11 @@
           </div>
           <div class="input-box">
             <span class="details">Telefone</span>
-            <input type="tel" maxlength="13" minlength="13" name="telefone" pattern="(\([0-9]{2}\))([0-9]{9})" placeholder="Telefone ex:(xx)xxxxxxxxx" required>
+            <input type="tel" maxlength="13" minlength="13" name="telefone" pattern="(\([0-9]{2}\))([0-9]{9})" placeholder="Telefone Ex: (xx)xxxxxxxxx" required>
           </div>
           <div class="input-box">
             <span class="details">Senha</span>
-            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha" id="senha" placeholder="Sua Senha" required>
+            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,20}$" name="senha" id="senha" placeholder="Ex: 1234aA@" required>
           </div>
           <div class="input-box">
             <span class="details">Confirme a senha</span>

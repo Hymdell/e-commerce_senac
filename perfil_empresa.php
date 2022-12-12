@@ -68,7 +68,7 @@
               <li class="scroll-to-section"><a href="index_logado.php">Destaques</a></li>
               <li class="scroll-to-section"><a href="index_logado.php">Sobre Nós</a></li>
               <li class="scroll-to-section"><a href="index_logado.php">Contato</a></li>
-              <li class="scroll-to-section"><a href="index.php">Sair</a></li>
+              <li class="scroll-to-section"><a href="desloga.php">Sair</a></li>
               <li class="scroll-to-section"><div class="main-red-button"><a href="perfil_verifica.php">Perfil</a></div></li>
             </ul>        
             <a class='menu-trigger'>

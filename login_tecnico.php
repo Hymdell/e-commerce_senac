@@ -47,6 +47,7 @@
                         <button><input type="submit" value="Entrar"></button>
                     </div>
                 </form>
+                <center>Não possui Cadastro? <a href="cad_tecnico.php">Cadastre-se!</a></center>
             </div>
             <div class="line"></div>
         </div>
