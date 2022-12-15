@@ -5,6 +5,7 @@
     $con->conecta();
     $_SESSION['tabela']=$_POST['tabela'];
     $_SESSION['email']=$_POST['email'];
+    $mensagem = "Entrar em contato com " . $_POST['nome'] . "no email " . $_POST['email'] . "com o assunto " . $_POST['assunto'] . "Mensagem do cliente: ". $_POST['mensagem'];
     $verifica = $con->login($_POST['tabela'],$_POST['email'],$_POST['senha']);
     if($verifica == true){
         $_SESSION['logado'] = true;

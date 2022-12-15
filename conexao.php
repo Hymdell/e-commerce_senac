@@ -3,9 +3,9 @@ class Conexao{
     var $con;
     function conecta(){
         $servername = "localhost";
-        $database = "ecommerce";
-        $username = "root";
-        $password = "root";
+        $database = "id20008964_techcare";
+        $username = "id20008964_root";
+        $password = "MpCys+Tm5U9j5l<6";
 
         $this->con = mysqli_connect($servername,$username,$password,$database);
         if(empty($this->con)){
@@ -63,11 +63,11 @@ class Conexao{
         } 
     }
 
-    function atualiza_perfil($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento,$resumo,$resumolinha,$imagem){
+    function atualiza_perfil($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento,$resumo,$resumolinha){
         if($tabela == "empresas"){
-            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha',`Imagem`='$imagem' WHERE `CNPJ` = '$cpfcnpj'";
+            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha' WHERE `CNPJ` = '$cpfcnpj'";
         }elseif($tabela == "tecnicos"){
-            $sql = "UPDATE `tecnicos` SET `Nome`='$nome',`CPFtec`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha',`Imagem`='$imagem' WHERE `CPFtec` = '$cpfcnpj'";
+            $sql = "UPDATE `tecnicos` SET `Nome`='$nome',`CPFtec`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha' WHERE `CPFtec` = '$cpfcnpj'";
         }elseif($tabela == "usuarios"){
             $sql = "UPDATE `usuarios` SET `Nome`='$nome',`CPFuser`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento' WHERE `CPFuser` = '$cpfcnpj'";
         }
@@ -203,6 +203,42 @@ class Conexao{
         }
         $this->con->close();
         return $dados;
+    }
+    function atualiza_senha($tabela,$email,$senha){
+        if($tabela == "empresas"){
+            $sql = "UPDATE `empresas` SET`Senha`='$senha' WHERE `Email` = '$email'";
+        }elseif($tabela == "tecnicos"){
+            $sql = "UPDATE `tecnicos` SET `Senha`='$senha' WHERE `Email` = '$email'";
+        }elseif($tabela == "usuarios"){
+            $sql = "UPDATE `usuarios` SET `Senha`='$senha' WHERE `Email` = '$email'";
+        }
+
+        if($this->con->query($sql) == TRUE){
+            $this->con->close();
+            return true;
+        }else{
+            $this->con->close();
+            return false;
+        } 
+    }
+    function email_existente($tabela,$email){
+        $existe = false;
+        $sql = "SELECT `Email` FROM `empresas` WHERE `Email`='$email';";
+        $result = $this->con->query("SELECT `Email` FROM `$tabela` WHERE `Email`='$email';");
+        $aux_query = $result->fetch_assoc();
+        $email2 = $aux_query['Email'];
+        
+        if($email2 == $email){
+            $existe = true;
+        }
+        
+        if($existe == true){
+            $this->con->close();
+            return true;
+        }else{
+            $this->con->close();
+            return false;
+        }
     }
 }
 ?>
