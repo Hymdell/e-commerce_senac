@@ -14,14 +14,14 @@
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'cursocristopher@gmail.com';
-        $mail->Password   = 'lbwkemijkrxzyjzv';
+        $mail->Username   = 'seu email';
+        $mail->Password   = 'senha do app';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
         
-        $mail->setFrom('cursocristopher@gmail.com', 'Suporte TECHCARE');
+        $mail->setFrom('seu email', 'Suporte TECHCARE');
         $mail->addAddress($_POST['email'], 'Cliente');
-        $mail->addReplyTo('cursocristopher@gmail.com', 'Suporte TECHCARE');
+        $mail->addReplyTo('seu email', 'Suporte TECHCARE');
 
         $mail->isHTML(true); 
         $mail->Subject = 'Redefinicao de Senha';
