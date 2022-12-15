@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="pt-BR">
@@ -15,7 +18,6 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>TECHARE Login</title>
     <?php
-    session_start();
     if($_SESSION['existe'] == false){
         echo '<style> p{color: white;background-color: red;}</style>';
     }
@@ -47,6 +49,7 @@
                         <button><input type="submit" value="Entrar"></button>
                     </div>
                 </form>
+                <center>Esqueceu sua senha? <a href="recupera.php">Recupere!</a></center>
                 <center>Não possui Cadastro? <a href="cad_cliente.php">Cadastre-se!</a></center>
             </div>
             <div class="line"></div>

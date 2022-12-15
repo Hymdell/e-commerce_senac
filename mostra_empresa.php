@@ -135,16 +135,16 @@
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="mailto:email@email.com">
+          <form id="contact" action="envia_email.php" method="post">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
-                  <input autocomplete="off" type="name" name="name" id="name" placeholder="Nome" autocomplete="on" required>
+                  <input autocomplete="off" type="name" name="nome" id="name" placeholder="Nome" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <input autocomplete="off" type="surname" name="surname" id="surname" placeholder="Sobrenome" autocomplete="on" required>
+                  <input autocomplete="off" type="surname" name="assunto" id="surname" placeholder="Assunto" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -154,7 +154,7 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <textarea autocomplete="off" name="message" type="text" class="form-control" id="message" placeholder="Mensagem" required=""></textarea>  
+                  <textarea autocomplete="off" name="mensagem" type="text" class="form-control" id="message" placeholder="Mensagem" required=""></textarea>  
                 </fieldset>
               </div>
               <div class="col-lg-12">

@@ -1,6 +1,6 @@
 <?php
-    include "conexao.php";
     session_start();
+    include "conexao.php";
     $con = new Conexao();
     $con->conecta();
     $_SESSION['dados'] = $con->busca_unica($_SESSION['tabela'],$_SESSION['email']);
