@@ -86,7 +86,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-20 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="perfil_att_del.php" method="post">
+          <form id="contact" action="perfil_att_del.php" method="post" enctype="multipart/form-data">
             <div class="row">
             <div class="col-lg-12">
                 <fieldset>
@@ -174,7 +174,7 @@
               <div class="col-lg-12">
                 <fieldset>
                   <label for="imagem">Logo da empresa ou foto do local: </label>
-                  <input type="file" name="imagem" id="imagem" <?php echo 'value ="' . $dados[13] . '"'; ?>placeholder="Foto de Perfil">
+                  <input type="file" name="imagem" id="imagem" placeholder="<?php echo $dados[13];?>">
                 </fieldset>
               </div>
               <div class="col-lg-1">

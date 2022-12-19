@@ -103,31 +103,31 @@ session_start();
           </div>
         </div>
       </div>
+          <div class="row">
           <?php
             $dados = $_SESSION['dados'];
             $tamanho = count($dados);
             for($x=0;$x<$tamanho;$x++){
                 echo 
-                '<form action="mostra_unico.php" method="POST">
-                  <div class="row">
-                      <div class="col-lg-3 col-sm-6">
+                '<div class="col-lg-3 col-sm-6">
+                  <form action="mostra_unico.php" method="POST">
                         <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                           <div class="hidden-content">
                             <h4>'. $dados[$x][0] .'</h4>
                             <p>'. $dados[$x][11] .'</p>
                             <input type="hidden" name="tabela" value="tecnicos">
                             <input type="hidden" name="email" value="'. $dados[$x][2] .'">
-                            <input class="botao" type="submit" value="Ver Técnico">
+                            <input class="botao" type="submit" value="Ver Técnicos">
                           </div>
                           <div class="showed-content">
                             <img src="assets/images/wrench.png" alt="">
                           </div>
                         </div>
-                      </div>
-                  </div>
-                </form>';
+                      </form>
+                  </div>';
               }
           ?>
+        </div>
     </div>
   </div>
 

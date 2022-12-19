@@ -48,13 +48,13 @@ class Conexao{
     function registro($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento){
         if($tabela == "empresas"){
             $sql = "INSERT INTO `empresas`(`Nome`, `CNPJ`, `Email`, `Telefone`, `Senha`, `Estado`, `Cidade`, `Rua`, `Numero`, `Bairro`, `Complemento`) VALUES ('$nome','$cpfcnpj','$email','$telefone','$senha','$estado','$cidade','$rua','$numero','$bairro','$complemento')";
-        }elseif($tabela == "tecnicos"){
+        }else if($tabela == "tecnicos"){
             $sql = "INSERT INTO `tecnicos`(`Nome`, `CPFtec`, `Email`, `Telefone`, `Senha`, `Estado`, `Cidade`, `Rua`, `Numero`, `Bairro`, `Complemento`) VALUES ('$nome','$cpfcnpj','$email','$telefone','$senha','$estado','$cidade','$rua','$numero','$bairro','$complemento');";
-        }elseif($tabela == "usuarios"){
+        }else if($tabela == "usuarios"){
             $sql = "INSERT INTO `usuarios`(`Nome`, `CPFuser`, `Email`, `Telefone`, `Senha`, `Estado`, `Cidade`, `Rua`, `Numero`, `Bairro`, `Complemento`) VALUES ('$nome','$cpfcnpj','$email','$telefone','$senha','$estado','$cidade','$rua','$numero','$bairro','$complemento');";
         }
 
-        if($this->con->query($sql) == TRUE){
+        if($this->con->query($sql) == true){
             $this->con->close();
             return true;
         }else{
@@ -63,16 +63,16 @@ class Conexao{
         } 
     }
 
-    function atualiza_perfil($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento,$resumo,$resumolinha){
+    function atualiza_perfil($tabela,$nome,$cpfcnpj,$email,$telefone,$senha,$estado,$cidade,$rua,$numero,$bairro,$complemento,$resumo,$resumolinha,$imagem){
         if($tabela == "empresas"){
-            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha' WHERE `CNPJ` = '$cpfcnpj'";
+            $sql = "UPDATE `empresas` SET `Nome`='$nome',`CNPJ`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha',`Imagem`='$imagem' WHERE `CNPJ` = '$cpfcnpj'";
         }elseif($tabela == "tecnicos"){
-            $sql = "UPDATE `tecnicos` SET `Nome`='$nome',`CPFtec`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha' WHERE `CPFtec` = '$cpfcnpj'";
+            $sql = "UPDATE `tecnicos` SET `Nome`='$nome',`CPFtec`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento',`Resumo`='$resumo',`ResumoLinha`='$resumolinha',`Imagem`='$imagem' WHERE `CPFtec` = '$cpfcnpj'";
         }elseif($tabela == "usuarios"){
             $sql = "UPDATE `usuarios` SET `Nome`='$nome',`CPFuser`='$cpfcnpj',`Email`='$email',`Telefone`='$telefone',`Senha`='$senha',`Estado`='$estado',`Cidade`='$cidade',`Rua`='$rua',`Numero`='$numero',`Bairro`='$bairro',`Complemento`='$complemento' WHERE `CPFuser` = '$cpfcnpj'";
         }
 
-        if($this->con->query($sql) == TRUE){
+        if($this->con->query($sql) == true){
             $this->con->close();
             return true;
         }else{

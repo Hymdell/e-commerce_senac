@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="pt-BR" dir="ltr">
@@ -8,7 +11,6 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Registro Técnico</title>
      <?php
-    session_start();
     if($_SESSION['erro'] == false){
         echo '<style> p{color: white;background-color: red;}</style>';
     }

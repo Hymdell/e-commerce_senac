@@ -176,48 +176,68 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>Mojotech</h4>
-                <p>Empresa para Empresas faça seu contrato.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
+            <form action="mostra_unico.php" method="post">
+                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                  <div class="hidden-content">
+                    <h4>Protec</h4>
+                    <p>Empresa para Empresas faça seu contrato.</p>
+                    <input type="hidden" name="tabela" value="empresas">
+                    <input type="hidden" name="email" value="protec@gmail.com">
+                    <input class="botao" type="submit" value="Ver Empresa">
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/building.svg" alt="">
+                  </div>
+                </div>
+            </form>
         </div>
         <div class="col-lg-3 col-sm-6">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Cybertech</h4>
-                <p>Empresa atendimentos para todos.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/building.svg" alt="">
-              </div>
-            </div>
+            <form action="mostra_unico.php" method="post">
+                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                  <div class="hidden-content">
+                    <h4>Cybertech</h4>
+                    <p>Empresa atendimentos para todos.</p>
+                    <input type="hidden" name="tabela" value="empresas">
+                    <input type="hidden" name="email" value="cybertech@gmail.com">
+                    <input class="botao" type="submit" value="Ver Empresa">
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/building.svg" alt="">
+                  </div>
+                </div>
+            </form>
         </div>
         <div class="col-lg-3 col-sm-6">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Julio Tech</h4>
-                <p>Atendimentos remotos e a domicílio.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
+            <form action="mostra_unico.php" method="post">
+                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="hidden-content">
+                    <h4>Julio Tech</h4>
+                    <p>Atendimentos remotos e a domicílio.</p>
+                    <input type="hidden" name="tabela" value="tecnicos">
+                    <input type="hidden" name="email" value="juliotech@gmail.com">
+                    <input class="botao" type="submit" value="Ver Técnico">
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/wrench.png" alt="">
+                  </div>
+                </div>
+            </form>
         </div>
         <div class="col-lg-3 col-sm-6">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-              <div class="hidden-content">
-                <h4>Ademir dos santos</h4>
-                <p>Atendimentos apenas no meu local.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/wrench.png" alt="">
-              </div>
-            </div>
+            <form action="mostra_unico.php" method="post">
+                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                  <div class="hidden-content">
+                    <h4>Ademir dos santos</h4>
+                    <p>Atendimentos apenas no meu local.</p>
+                    <input type="hidden" name="tabela" value="tecnicos">
+                    <input type="hidden" name="email" value="ademir@gmail.com">
+                    <input class="botao" type="submit" value="Ver Técnico">
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/wrench.png" alt="">
+                  </div>
+                </div>
+            </form>
         </div>
       </div>
     </div>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -50,7 +53,6 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <?php
-              session_start();
               if($_SESSION['logado'] == true){
                 echo '<a href="index_logado.php" class="logo"><h4>Tech<span>Care</span></h4></a>';
               }else{
@@ -112,7 +114,7 @@
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/<?php echo $dados[13] ?>" alt="IMAGEM AQUI">
+                <?php echo '<img src="uploads/' . $dados[13] . '" alt="' . $dados[13] . '"';?>
               </div>
             </div>
           </div>
