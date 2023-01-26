@@ -10,14 +10,14 @@
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'cursocristopher@gmail.com';
-            $mail->Password   = 'lbwkemijkrxzyjzv';
+            $mail->Username   = '';
+            $mail->Password   = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
             
-            $mail->setFrom('cursocristopher@gmail.com', 'Contato TECHCARE');
-            $mail->addAddress('cursocristopher@gmail.com', 'Contato TECHCARE');
-            $mail->addReplyTo('cursocristopher@gmail.com', 'Contato TECHCARE');
+            $mail->setFrom('', 'Contato TECHCARE');
+            $mail->addAddress('', 'Contato TECHCARE');
+            $mail->addReplyTo('', 'Contato TECHCARE');
             $mail->isHTML(true); 
             $mail->Subject = 'Contato com Cliente';
             $mail->Body    = $mensagem;
